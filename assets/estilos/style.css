@@ -1,0 +1,321 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;600&family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #000;
+}
+a, li{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*header init*/
+
+.section-header{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.logo img{
+    width: 100px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4vh;
+    text-transform: uppercase;
+
+}
+.nav-bar a{
+    color: #fff;
+    padding: 5vh;
+    font-weight: 600;
+    font-size: 1.0rem;
+}
+.nav-bar a:hover{
+    padding-bottom: 30px;
+    color: #03a696;
+}
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 200px;
+    margin-right: 2rem;
+   }
+   
+   .input {
+    width: 150vw;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: #04BFAD;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #11BFBF;
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #04BFAD;
+    width: 1rem;
+    height: 1rem;
+   }
+   /*header end*/
+
+
+   /*init section top*/
+   .section-top{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: 98vw;
+    height: 80vh;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    padding-top: 70px;
+    margin-top: 40px;
+    padding: 10%;
+
+
+    background: rgba(233, 230, 230, 0.35);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+   }
+   .section-top-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+   .section-top-text h1,
+   .section-top-description h1{
+    font-size: 7em;
+    font-family: "Myriad Bold Italic";
+    text-transform: uppercase;
+    color: #F25252;
+   }
+  
+button{
+    width: 9em;
+    height: 4em;
+    border-radius: 30em;
+    font-size: 16px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 30px;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 4em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #ccc 0%, #999 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 9em;
+   }
+   .section-top-product img{
+    width: 36vw;
+    margin-left: 90px;
+   }
+   .section-top-description p{
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1.0rem;
+    text-align: left;
+    width: 33%;
+    padding-right: 50px;
+    width: 500px;
+    max-width: 800px;
+   }
+   
+/*SERVICES*/
+   .section-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.section-title h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 50px;
+    text-transform: uppercase;
+}
+.section-projects--filters{
+    border: 1px solid #ccc;
+    
+    background: rgba(233, 230, 230, 0.35);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: inline-block;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+}
+
+.section-projects--filters ul,
+.section-projects--filters li{
+    list-style: none;
+}
+
+.section-projects--filters li{
+    display: inline-block;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+  
+    color: #fff;
+    cursor: pointer;
+}
+
+.section-projects--filters li:hover,
+.section-projects--filters li.active{
+    border-bottom: 3px solid #f2b705;
+}
+
+.section-projects--filters li:first-child{
+    border-left: 0;
+}
+.container {
+    display: flex;
+  }
+  .card {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 16px;
+    overflow: hidden;
+    transform: translate(0);
+    margin: 16px;
+    transition: 0.25s;
+  }
+  .card:hover {
+    transform: scale(1.03);
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -64px;
+    left: -64px;
+    width: 150%;
+    height: 76%;
+    transform: rotate(-12deg);
+    z-index: -1;
+  }
+  .card.card-yellow,
+  .card.card-red, .card.card-blue {
+    background: rgba(255, 255, 255, 0.233);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px; 
+  }
+  .card .logo {
+    height: 24px;
+    padding: 8px;
+  }
+  .card h2 {
+    font-family: "Myriad Bold Italic";
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 64px;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 24px;
+  }
+  .card .product {
+    height: 180px;
+    width: 300px;
+    object-fit: contain;
+    transform: rotate(-35deg);
+    margin-top: -42px;
+    margin-left: -32px;
+    margin-right: 24px;
+  }
+  .card .price {
+    text-align: right;
+    margin-top: -24px;
+  }
+  .card .price :is(h6, h4) {
+    font-family: "Myriad Bold";
+    color: #ffffff;
+    margin: 0;
+  }
+  .card .price h6 {
+    color: #a3a3a3;
+    font-size: 12px;
+    text-decoration: line-through;
+  }
+  .card .price h4 {
+    font-size: 24px;
+    margin-top: -4px;
+  }
+  .card.card-yellow .price h4, .card.card-blue .price h4,  .card.card-red .price h4{
+    background-color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .card .button-right {
+    text-align: right;
+    margin-top: 64px;
+  }
+  .card button {
+    font-family: "Myriad Semibold";
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+  }
+  @media (max-width: 1200px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+   
