@@ -4,10 +4,10 @@
 
 
 # 📍 Bibliotecas utilizadas
-- Google fonts (https://fonts.google.com/)
-- Pexels (https://www.pexels.com/pt-br/)
-- emojipedia (https://emojipedia.org/objects/)
-- png wing(https://www.pngwing.com/pt/search?q=pesquisa)
+- [Google fonts](https://fonts.google.com/)
+- [Pexels](https://www.pexels.com/pt-br/)
+- [emojipedia](https://emojipedia.org/objects/)
+- [png wing](https://www.pngwing.com/pt/search?q=pesquisa)
  
 # 📍 Tecnologias 
 
@@ -16,7 +16,7 @@
 - JavaScript
 
 # 📍 Explicação do projeto
-<p></p>
+<p>Loja ficticia de tenis para portfolio, esse site foi totalmente feita para estudos e sem nenhuma intuição de vendas.</p>
  
 # 📍 Redes sociais 
  ## Me acompanhe também pelas redes sociais
